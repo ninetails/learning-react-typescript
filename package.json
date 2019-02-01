@@ -4,6 +4,9 @@
   "repository": "git@github.com:ninetails/learning-react-typescript.git",
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -13,6 +16,11 @@
     "cz-conventional-changelog": "^2.1.0"
   },
   "scripts": {
-    "co": "npx git-cz"
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes 2>/dev/null || :",
+    "co": "npx git-cz",
+    "lerna:clean": "lerna run clean 2>/dev/null || :",
+    "purge": "$npm_execpath run lerna:clean && $npm_execpath run clean && rm -rf node_modules",
+    "reset": "$npm_execpath run purge && $npm_execpath install && $npm_execpath run bootstrap"
   }
 }
