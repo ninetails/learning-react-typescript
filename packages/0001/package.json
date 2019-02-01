@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "description": "https://medium.com/@dandobusiness/setting-up-a-react-typescript-storybook-project-5e4e9f540568",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@types/storybook__react": "^4.0.0",
