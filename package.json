@@ -1,0 +1,18 @@
+{
+  "name": "learning-react-typescript",
+  "version": "0.0.0",
+  "repository": "git@github.com:ninetails/learning-react-typescript.git",
+  "license": "MIT",
+  "private": true,
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "scripts": {
+    "co": "npx git-cz"
+  }
+}
