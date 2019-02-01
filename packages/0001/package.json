@@ -1,0 +1,30 @@
+{
+  "name": "my-app",
+  "description": "https://medium.com/@dandobusiness/setting-up-a-react-typescript-storybook-project-5e4e9f540568",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/storybook__react": "^4.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts-ts": "3.1.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^4.1.11",
+    "@types/jest": "^23.3.13",
+    "@types/node": "^10.12.21",
+    "@types/react": "^16.7.22",
+    "@types/react-dom": "^16.0.11",
+    "awesome-typescript-loader": "^5.2.1",
+    "react-docgen-typescript-loader": "^3.0.1",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "typescript": "^3.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  }
+}
